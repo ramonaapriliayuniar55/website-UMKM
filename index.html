@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kimbab Cihuyy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- ===== NAVBAR  ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo1.png" alt="Logo UMKM" width="70" height="70"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== ALERT BOOTSTRAP (ditambahkan) ===== -->
+<div class="alert alert-warning text-center mb-0">
+    🎉 Promo Hari Ini: Beli 2 Gratis 1! 🎉
+</div>
+
+<!-- ===== CAROUSEL BOOTSTRAP (ditambahkan) ===== -->
+<div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/kimbab2.jpg" class="d-block width:40" alt="Kimbab">
+    </div>
+    <div class="carousel-item">
+      <img src="images/kimbab3.webp" class="d-block width:40" alt="Kimbab">
+    </div>
+    <div class="carousel-item">
+      <img src="images/kimbab4.jpg" class="d-block width:40" alt="Kimbab">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<section class="hero">
+    <div class="container">
+        <h2>Selamat Datang di Website Kami</h2>
+        <p>Kami menyediakan Kimbab ala Korea yg di buat langsung oleh Ahlinya.</p>
+    </div>
+</section>
+<section class="keunggulan">
+    <div class="container text-center">
+
+        <h2>Kenapa Memilih Kami?</h2>
+
+        <img src="images/kimbab2.jpg" alt="Kimbab Cihuyy" width="30%" class="rounded shadow" />
+
+        <p>UMKM yang menyajikan Kimbab ala Korea dengan cita rasa Indonesia!</p>
+
+        <ul class="fitur-list">
+            <li>✅ Produk 100% Homemade</li>
+            <li>✅ Bahan Premium & Segar</li>
+            <li>✅ Pengiriman Cepat</li>
+        </ul>
+    </div>
+</section>
+<section class="praktik">
+        <div class="container">
+                <h2>Testimoni Pelanggan</h2>
+                <div id="testimoni-container" >
+                </div>
+        </div>
+</section>
+<!-- ===== BUTTON GROUP (BOOTSTRAP ditambahkan) ===== -->
+<div class="container text-center my-4">
+    <div class="btn-group">
+        <button class="btn btn-primary" id="btn-info">Info</button>
+        <button class="btn btn-success" id="btn-promo">Promo</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 Kimbab Cihuyy. Semua hak dilindungi.</p>
+</footer>
+
+<!-- ===== MODAL BOOTSTRAP (ditambahkan) ===== -->
+<div class="modal fade" id="promoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Informasi Promo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Dapatkan diskon khusus minggu ini! Jangan sampai kehabisan~
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// === 1) Klik tombol PROMO → tampilkan modal
+$("#btn-promo").click(function () {
+    $("#promoModal").modal("show");
+});
+
+// === 2) Hover pada gambar → zoom efek
+$("img").hover(
+    function () {
+        $(this).css("transform", "scale(1.05)");
+        $(this).css("transition", "0.3s");
+    },
+    function () {
+        $(this).css("transform", "scale(1)");
+    }
+);
+
+// === 3) Klik tombol INFO → alert info
+$("#btn-info").click(function () {
+    alert("Kimbab Cihuyy menggunakan bahan premium & fresh setiap hari!");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+/* Gaya umum halaman */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== HEADER ====== */
+header {
+    background-color: #413e41;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+h1 {
+    font-family: 'Segoe UI', Arial;
+    font-size: 50px;
+    margin: 5px 0 10px 0;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+    font-weight: bold;
+
+}
+
+/* ====== NAVIGASI ====== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cccccc;
+}
+
+/* ====== KONTEN ====== */
+h2 {
+    color: #111111;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-size: 26px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ====== TABEL PRODUK ====== */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 18px;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #413e41;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* ====== FORM ====== */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(255,255,255,0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #413e41;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #5b565b;
+}
+
+/* ====== GAMBAR & CARD ====== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeri{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow:hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* atur tinggi maksimal */
+    object-fit: cover; /* biar tetap rapi dan proporsional */
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/*Responsif untuk layar kecil */
+@media (max-width: 768px){
+    .galeri {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        max-width: 90%;
+    }
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #413e41;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+    align-content: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-grow:0.75;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #928e89;
+    border-bottom: 2px solid #999187;
+}
+
+.hero {
+    background: #e9e1cf;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+.keunggulan {
+    background-color: #f8f9fa; /* warna lembut */
+    padding: 40px 20px;
+    border-radius: 12px; /* sudut lebih bulat */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fitur-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+
+}
+.fitur-list li {
+    margin-bottom: 10px;
+    background: #e8ebee;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#testimoni-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.testimoni-card {
+  background-color: #fff;
+  border-left: 5px solid #776e68;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 90%;          /* lebih lebar */
+  max-width: 700px;    /* biar panjang */
+  padding: 20px;
+  text-align: justify;
+}
+
+.testimoni-card p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.testimoni-card .nama {
+  font-style: italic;
+  color: #555;
+  text-align: right;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #a7b3a7;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9aa79a;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* ====== FORM KONTAK - GAYA ESTETIK ====== */
+.kontak-section {
+  background: linear-gradient(135deg, #f7f6f4, #fffefd);
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.kontak-section h2 {
+  text-align: center;
+  color: #413e41;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+.kontak-form-container {
+  max-width: 650px;
+  background: #8b8686;
+  padding: 40px 50px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+.kontak-form-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* Label & Input */
+.kontak-form-container label {
+  display: block;
+  margin-bottom: 6px;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.kontak-form-container input[type="text"],
+.kontak-form-container input[type="email"],
+.kontak-form-container input[type="number"],
+.kontak-form-container textarea,
+.kontak-form-container select {
+  width: 100%;
+  padding: 9px 7px;
+  margin-bottom: 10px;
+  border: 1.5px solid #ffffff;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.kontak-form-container input:focus,
+.kontak-form-container textarea:focus,
+.kontak-form-container select:focus {
+  border-color: #a58b7d;
+  box-shadow: 0 0 6px rgba(165,139,125,0.4);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Checkbox */
+.kontak-form-container .checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Tombol */
+.kontak-form-container button {
+  background-color: #776e68;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.kontak-form-container button:hover {
+  background-color: #958b83;
+  transform: scale(1.04);
+}
+
+.kontak-form-container button#clearBtn {
+  background-color: #c6c2bc;
+}
+
+.kontak-form-container button#clearBtn:hover {
+  background-color: #9b9997;
+}
+
+#successMsg {
+  color: green;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#errorMsg {
+  color: red;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+/* Animasi lembut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .kontak-form-container {
+    padding: 25px;
+  }
+
+  .kontak-form-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tambahan CSS untuk hover galeri */
+.galeri .card img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeri .card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.btn-webinar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a5998f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-webinar:hover {
+    background-color: #b6aea8;
+}
+
+
+
+
+
