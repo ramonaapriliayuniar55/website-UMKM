@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kimbab Cihuyy</title>
+    <title>Galeri - Kimbab Cihuyy</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Custom -->
     <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="images/logo1.png" alt="Logo UMKM" width="50" height="50"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -16,106 +25,102 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
                 <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
                 <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
-                <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link active" href="galeri.html">Galeri</a></li>
                 <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<!-- ===== KONTEN ===== -->
 <main class="container my-5">
 
-    <!-- ===== ALERT (Bootstrap Alert) ===== -->
+    <!-- ALERT -->
     <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
-    Selamat datang di Galeri Kimbab Cihuyy! Klik gambar untuk melihat detail.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+        Selamat datang di Galeri Kimbab Cihuyy! Klik gambar untuk melihat detail.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
     <h2 class="mb-4">Galeri Produk & Kegiatan</h2>
 
-    <!-- ===== GALERI (Bootstrap Card & Grid) ===== -->
+    <!-- ===== GALERI ===== -->
     <section class="row galeri g-4">
+
         <div class="col-md-4">
             <div class="card">
                 <img src="images/bahankimbab.jpg" class="card-img-top" alt="Bahan Pembuatan Kimbab">
                 <div class="card-body">
-                    <p class="card-text">Pemilihan Bahan Premium untuk Menjaga Kualitas Rasa</p>
+                    <p class="card-text">
+                        Pemilihan Bahan Premium untuk Menjaga Kualitas Rasa
+                    </p>
                 </div>
             </div>
         </div>
+
         <div class="col-md-4">
             <div class="card">
                 <img src="images/proses pembuatan.jpg" class="card-img-top" alt="Proses Pembuatan Kimbab">
                 <div class="card-body">
-                    <p class="card-text">Digulung Rapi dan Padat! Dibuat Cepat Oleh Ahlinya</p>
+                    <p class="card-text">
+                        Digulung Rapi dan Padat! Dibuat Cepat Oleh Ahlinya
+                    </p>
                 </div>
             </div>
         </div>
+
         <div class="col-md-4">
             <div class="card">
                 <img src="images/penyajiankimbab.jpeg" class="card-img-top" alt="Penyajian Kimbab">
                 <div class="card-body">
-                    <p class="card-text">Kimbab Siap Saji dengan Potongan Rapi dan Tampilan Menggugah Selera</p>
+                    <p class="card-text">
+                        Kimbab Siap Saji dengan Potongan Rapi dan Tampilan Menggugah Selera
+                    </p>
                 </div>
             </div>
-        </div>>
+        </div>
+
         <div class="col-md-6">
             <div class="card">
                 <img src="images/kemasankimbab.jpg" class="card-img-top" alt="Kemasan Kimbab">
                 <div class="card-body">
-                    <p class="card-text">Kemasan Higienis dan Aman Menjaga Kualitas Hingga ke Tangan Anda</p>
+                    <p class="card-text">
+                        Kemasan Higienis dan Aman Menjaga Kualitas Hingga ke Tangan Anda
+                    </p>
                 </div>
             </div>
         </div>
+
         <div class="col-md-6">
             <div class="card">
                 <img src="images/pengirimankimbab.jpg" class="card-img-top" alt="Proses Pengiriman Kimbab">
                 <div class="card-body">
-                    <p class="card-text">Pengiriman Cepat dan Aman oleh Kurir Terpercaya</p>
+                    <p class="card-text">
+                        Pengiriman Cepat dan Aman oleh Kurir Terpercaya
+                    </p>
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- ===== BUTTON (Bootstrap Button) ===== -->
-    <div class="text-center mt-5">
-        <button id="btnAlert" class="btn btn-primary">Tampilkan Pesan Spesial</button>
-    </div>
 </main>
+
+<!-- ===== FOOTER ===== -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>&copy; 2025 Kimbab Cihuyy. Semua hak dilindungi.</p>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-$(document).ready(function(){
-
-    // ===== Event 1: Klik button untuk alert =====
-    $('#btnAlert').click(function(){
-        alert('Terima kasih telah mengunjungi Galeri Kimbab Cihuyy!');
-    });
-
-    // ===== Event 2: Hover gambar galeri (mengubah border) =====
-    $('.galeri .card img').hover(
-        function() { $(this).css('border', '3px solid #ffc107'); },
-        function() { $(this).css('border', ''); }
-    );
-
-    // ===== Event 3: Klik gambar galeri untuk memperbesar =====
-    $('.galeri .card img').click(function(){
-        let src = $(this).attr('src');
-        $('body').append(`
-            <div id="lightbox" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:9999;">
-                <img src="${src}" style="max-width:90%;max-height:90%;border-radius:10px;">
-            </div>
-        `);
-        $('#lightbox').click(function(){ $(this).remove(); });
-    });
-
-});
+<!-- ===== ES6 MODULE GALERI ===== -->
+<script type="module">
+    import initGaleri from "./galeri.js";
+    initGaleri();
 </script>
+
 </body>
 </html>

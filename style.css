@@ -556,7 +556,25 @@ section {
     background-color: #b6aea8;
 }
 
+/* === TEKS GALERI AWALNYA TERSEMBUNYI === */
+.galeri .card .card-body {
+    display: none;
+    padding-top: 12px;
+}
 
+/* Efek klik terasa interaktif */
+.galeri .card {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.galeri .card:hover {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.fadeIn {
+    animation: fadeIn 0.4s ease;
+}
 
 
 
