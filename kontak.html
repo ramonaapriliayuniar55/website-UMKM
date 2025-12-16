@@ -48,10 +48,10 @@
                 <option value="kerjasama">Kerja Sama</option>
             </select><br><br>
 
-            <label for="pesan">Pesan:</label><br>
+            <label for="pesan">Pesan :</label><br>
             <textarea id="pesan" name="pesan" rows="5" cols="30"></textarea><br><br>
 
-            <label for="nohp">Nomor HP:</label>
+            <label for="nohp">Nomor HP :</label>
             <input type="text" id="nohp" name="nohp" required placeholder="Hanya angka" maxlength="15" /><br><br>
 
             <div class="checkbox-container">
@@ -96,18 +96,15 @@
 <script>
 $(document).ready(function () {
 
-    // ===== FORM VALIDASI =====
     const form = $("#formKontak");
     const errorMsg = $("#errorMsg");
     const successMsg = $("#successMsg");
     const nohp = $("#nohp");
 
-    // Validasi agar Nomor HP hanya angka
     nohp.on("input", function () {
         this.value = this.value.replace(/[^0-9]/g, "");
     });
 
-    // Submit form
     form.submit(function (e) {
         e.preventDefault();
         errorMsg.text("");
@@ -125,20 +122,17 @@ $(document).ready(function () {
         }
     });
 
-    // Clear form
     $("#clearBtn").click(function () {
         form[0].reset();
         errorMsg.text("");
         successMsg.text("");
     });
 
-    // =====  Hover alert promo =====
     $("#promoAlert").hover(
         function() { $(this).addClass("alert-success").removeClass("alert-warning"); },
         function() { $(this).removeClass("alert-success").addClass("alert-warning"); }
     );
 
-    // =====  Klik badge media sosial =====
     $(".badge").click(function () {
         alert("Terima kasih telah mengklik " + $(this).text());
     });
