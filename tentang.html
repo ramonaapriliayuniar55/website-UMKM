@@ -55,7 +55,7 @@
     </div>
     </div>
 
-    <h3>Daftar Webinar kami Sekarang !</h3>
+    <h3>Daftar Webinar kami Sekarang Juga !</h3>
         <a href="webinar.html" class="btn-webinar">Klik Untuk Melihat Halaman Webinar</a>
     </main>
 
@@ -79,18 +79,15 @@
 <script>
 $(document).ready(function () {
 
-    // ===== EVENT 1: Hover alert info =====
     $("#welcomeAlert").hover(
         function() { $(this).addClass("alert-success").removeClass("alert-info"); },
         function() { $(this).removeClass("alert-success").addClass("alert-info"); }
     );
 
-    // ===== EVENT 2: Klik badge media sosial =====
     $(".badge").click(function () {
         alert("Terima kasih telah mengklik " + $(this).text());
     });
 
-    // ===== EVENT 3: Klik tombol "Tampilkan Produk" =====
     $("#showProductsBtn").click(function () {
         $("#loadingSpinner").show();
         setTimeout(function () {

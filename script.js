@@ -22,7 +22,6 @@ console.log("Total semua Kimbab:", totalKimbab);
 
 console.log("Terima kasih telah mendukung UMKM lokal 💕");
 
-// ===== Kategori Usia =====
 function cekUsia() {
   let usia = document.getElementById("usiaInput").value;
   let hasil = "";
@@ -42,7 +41,6 @@ function cekUsia() {
   document.getElementById("hasilUsia").textContent = "Kategori: " + hasil;
 }
 
-// ===== Testimoni =====
 const testimoni = [
   { teks: "Kimbab Cihuyy mantap, anak-anak suka!", nama: "Rina, Pekalongan" },
   { teks: "Harga terjangkau, rasa bintang lima!", nama: "Bayu, Pemalang" },
@@ -63,7 +61,6 @@ testimoni.forEach(item => {
   container.appendChild(card);
 });
 
-// ===== Hitung Total Belanja =====
 function hitungTotal() {
   let harga = parseFloat(document.getElementById("harga").value);
   let jumlah = parseInt(document.getElementById("jumlah").value);

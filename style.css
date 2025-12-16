@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* ====== HEADER ====== */
 header {
     background-color: #413e41;
     color: #ffffff;
@@ -32,7 +31,6 @@ h1 {
 
 }
 
-/* ====== NAVIGASI ====== */
 nav ul {
     list-style: none;
     padding: 0;
@@ -53,7 +51,6 @@ nav ul li a:hover {
     color: #cccccc;
 }
 
-/* ====== KONTEN ====== */
 h2 {
     color: #111111;
     border-bottom: 2px solid #e0e0e0;
@@ -89,7 +86,6 @@ td, th {
     text-align: center;
 }
 
-/* ====== FOOTER ====== */
 footer {
     background-color: #413e41;
     color: #f0f0f0;
@@ -99,7 +95,6 @@ footer {
     font-size: 14px;
 }
 
-/* ====== FORM ====== */
 form {
     max-width: 600px;
     margin: 30px auto;
@@ -147,7 +142,6 @@ form button[type="submit"]:hover {
     background-color: #5b565b;
 }
 
-/* ====== GAMBAR & CARD ====== */
 img {
     max-width: 100%;
     height: auto;
@@ -206,13 +200,12 @@ img {
 .card img {
     width: 100%;
     height: auto;
-    max-height: 180px; /* atur tinggi maksimal */
-    object-fit: cover; /* biar tetap rapi dan proporsional */
+    max-height: 180px; 
+    object-fit: cover; 
     border-bottom: 1px solid #ddd;
     border-radius: 8px;
 }
 
-/*Responsif untuk layar kecil */
 @media (max-width: 768px){
     .galeri {
         flex-direction: column;
@@ -259,7 +252,6 @@ nav ul li a {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 
 .logo img {
@@ -304,9 +296,8 @@ nav ul li a {
     font-size: 2.5em;
 }
 .keunggulan {
-    background-color: #f8f9fa; /* warna lembut */
-    padding: 40px 20px;
-    border-radius: 12px; /* sudut lebih bulat */
+    background-color: #f8f9fa; 
+    border-radius: 12px; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -336,8 +327,8 @@ nav ul li a {
   border-left: 5px solid #776e68;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  width: 90%;          /* lebih lebar */
-  max-width: 700px;    /* biar panjang */
+  width: 90%;          
+  max-width: 700px;    
   padding: 20px;
   text-align: justify;
 }
@@ -388,7 +379,6 @@ section {
   margin-bottom: 60px;
 }
 
-/* ====== FORM KONTAK - GAYA ESTETIK ====== */
 .kontak-section {
   background: linear-gradient(135deg, #f7f6f4, #fffefd);
   padding: 60px 20px;
@@ -421,7 +411,6 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
-/* Label & Input */
 .kontak-form-container label {
   display: block;
   margin-bottom: 6px;
@@ -501,8 +490,6 @@ section {
   border-radius: 5px;
 }
 
-
-/* Animasi lembut */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -531,7 +518,7 @@ section {
   }
 }
 
-/* Tambahan CSS untuk hover galeri */
+
 .galeri .card img {
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -556,13 +543,11 @@ section {
     background-color: #b6aea8;
 }
 
-/* === TEKS GALERI AWALNYA TERSEMBUNYI === */
 .galeri .card .card-body {
     display: none;
     padding-top: 12px;
 }
 
-/* Efek klik terasa interaktif */
 .galeri .card {
     cursor: pointer;
     transition: box-shadow 0.3s ease;

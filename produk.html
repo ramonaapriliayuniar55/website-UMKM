@@ -34,22 +34,18 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main class="container my-5">
 
     <h2 class="mb-4">Produk Unggulan Kami</h2>
 
-    <!-- ALERT PROMO -->
     <div class="alert alert-info text-center mt-4" role="alert" id="promoAlert">
       🎉 Promo spesial: Beli 2 Gratis 1! 🎉
     </div>
 
     <p>Berikut daftar produk kimbab yang kami sediakan:</p>
 
-    <!-- CARD PRODUK -->
     <div class="row g-4">
 
-      <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card h-100">
           <img src="images/kimbab2.jpg" class="card-img-top" alt="Kimbab Original">
@@ -62,7 +58,6 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card h-100">
           <img src="images/kimbabmentai.jpg" class="card-img-top" alt="Kimbab Mentai">
@@ -75,7 +70,6 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="col-md-4">
         <div class="card h-100">
           <img src="images/kimbab3.webp" class="card-img-top" alt="Kimbab Spicy Mayo">
@@ -161,7 +155,6 @@ $(document).ready(function() {
   const previewProduk = $("#previewProduk");
   const temaSelect = $("#temaSelect");
 
-  // Event 1: Tambah wishlist
   tambahBtn.click(function(e){
     e.preventDefault();
     const namaProduk = produkInput.val().trim();
@@ -180,23 +173,19 @@ $(document).ready(function() {
     }
   });
 
-  // Event 2: Preview input
   produkInput.keyup(function(){
     previewProduk.text($(this).val());
   });
 
-  // Event 3: Ubah tema
   temaSelect.change(function(){
     $("body").css("background-color", $(this).val());
   });
 
-  // Event 4: Klik tombol beli
   $(".beliBtn").click(function(e){
     e.preventDefault();
     alert("Terima kasih, produk akan segera diproses!");
   });
 
-  // Event 5: Hover alert promo
   $("#promoAlert").hover(
     function(){ $(this).removeClass("alert-info").addClass("alert-success"); },
     function(){ $(this).removeClass("alert-success").addClass("alert-info"); }
